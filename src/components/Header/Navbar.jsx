@@ -1,7 +1,7 @@
-import { useAuthContext } from "@/context/Auth";
-import { Layout, Menu, Button, Flex, Typography } from "antd";
-import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Layout, Menu, Button, Flex, Typography } from "antd";
+import { useAuthContext } from "@/context/Auth";
+import { useState } from "react";
 
 
 const { Header } = Layout;
@@ -22,13 +22,6 @@ const Navbar = () => {
   ];
 
   
-  // const handleLogout = () => {
-  //   setIsAuth(false)
-  //   onClick={handleLogout}
-   
-  // }
-
-
   return (
 
     <Header style={{background: "#1d3550", padding: "10px 40px", }}>
@@ -77,7 +70,7 @@ const Navbar = () => {
           
             <Button size="large"  color="green" variant="solid" onClick={()=>{navigate("/dashboard")}} >Dashboard</Button>
            
-            <Button type="dashed" size="large" color="blue" variant="solid" onClick={handleLogout} >Logout</Button>
+            <Button type="dashed" size="large" color="red" variant="solid" onClick={handleLogout} >Logout</Button>
          
         </Flex>
         </>
