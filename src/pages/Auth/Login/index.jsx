@@ -59,6 +59,9 @@ const Login = () => {
                   <Paragraph className="text-center mt-3">
                 Don't have an account? <Link to="/auth/register">Create Account</Link>
               </Paragraph>
+                  <Paragraph className="text-center mt-3">
+                Forgot Password? <Link to="/auth/forgot-password">Reset Password</Link>
+              </Paragraph>
             </Col>
             </Row>
           </Form>
