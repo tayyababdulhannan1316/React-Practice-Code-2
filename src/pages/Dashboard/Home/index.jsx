@@ -153,12 +153,12 @@ const Home = () => {
           </Col>
           <Col xs={24} sm={12} lg={6}>
             <Card>
-              <Statistic
-                title="Pending approval"
-                value={stats.pending}
-                valueStyle={{ color: "#d4a106" }}
-                prefix={<ClockCircleOutlined />}
-              />
+             <Statistic
+              title="Pending approval"
+              value={stats.pending}
+              styles={{ content: { color: "#d4a106" } }}
+              prefix={<ClockCircleOutlined />}
+            />
             </Card>
           </Col>
           <Col xs={24} sm={12} lg={6}>
@@ -166,7 +166,7 @@ const Home = () => {
               <Statistic
                 title="Approved users"
                 value={stats.approved}
-                valueStyle={{ color: "#3f8600" }}
+                styles={{ content: { color: "#3f8600" } }}
                 prefix={<CheckCircleOutlined />}
               />
             </Card>

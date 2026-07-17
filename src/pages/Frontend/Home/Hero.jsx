@@ -12,7 +12,7 @@ const Hero = () => {
           <Col span={24}>
                 <Title level={1} >Home Page</Title>
                 <Title level={2} >Hero Section</Title> 
-                <Title level={2} >UID: {user.id}</Title> 
+                <Title level={2} >UID: {user.uid}</Title> 
                 <Title level={2} >fullName: {user.fullName}</Title>
                 <Title level={2} >Email: {user.email}</Title>
                 

@@ -4,8 +4,12 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-    server: {
+  server: {
     open: true,
+    watch: {
+      usePolling: true,
+      interval: 100,
+    },
   },
   resolve: {
     alias: {
