@@ -1,7 +1,7 @@
 
 import { Routes , Route } from "react-router-dom";
 import All from "./All";
-import Add from "./add";
+import Add from "./Add";
 
 const Todos = () => {
   
